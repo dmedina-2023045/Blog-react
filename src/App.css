@@ -1,0 +1,93 @@
+:root {
+  --primary-color: #4a90e2;
+  --background-color: #f9fbfc;
+  --card-background: #ffffff;
+  --text-color: #2d2d2d;
+  --subtext-color: #6b6b6b;
+  --accent-color: #7ed6df;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-header {
+  background-color: var(--card-background);
+  padding: 20px 40px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 28px;
+  color: var(--primary-color);
+}
+
+.app-nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.app-nav a:hover {
+  color: var(--primary-color);
+}
+
+.app-main {
+  flex: 1;
+  padding: 40px;
+  display: grid;
+  gap: 30px;
+}
+
+.featured-article, .recent-articles li {
+  background-color: var(--card-background);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.featured-article h2,
+.recent-articles h2 {
+  margin-top: 0;
+  color: var(--primary-color);
+}
+
+.recent-articles ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recent-articles li h3 {
+  margin: 0 0 5px;
+  color: var(--text-color);
+}
+
+.recent-articles li p {
+  color: var(--subtext-color);
+  margin: 0;
+}
+
+.app-footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--card-background);
+  border-top: 1px solid #e0e0e0;
+  font-size: 14px;
+  color: var(--subtext-color);
+}
+
