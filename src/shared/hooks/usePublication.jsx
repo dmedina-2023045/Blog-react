@@ -16,11 +16,10 @@ export const usePublication=()=>{
                 'Error al listar las publicaciones'
             )
         }
-        setPublications(
-            {
-                publications:publicationData.data.publications
-            }
-        )
+        setPublications({
+  publications: publicationData.data.post
+})
+
     }
     return{
         getPublications,

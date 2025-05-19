@@ -11,12 +11,13 @@ export const Publications = () => {
 
     const filteredPublications = publications.filter(pub => {
         if (filter === 'Todas') return true;
-        return pub.course.course === filter;
+        return pub.course.name === filter;
     });
 
     const handleNavigateToPost = (id) => {
         navigate(`/dashboard/publications/comments/${id}`);
     };
+    console.log("Contexto recibido:", publications)
 
     return (
         <div className="px-6">

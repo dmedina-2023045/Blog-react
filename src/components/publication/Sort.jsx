@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export const Filter = ({ activeFilter, onFilterChange }) => {
   const filterOptions = [
     'Todas',
-    'Taller',
+    'Taller lll',
     'Tecnología',
     'Práctica Supervisada',
   ]

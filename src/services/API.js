@@ -8,7 +8,7 @@ const apiClient=axios.create(
 )
 export const getPostsRequest=async()=>{
     try{
-        return await apiClient.get('post/getPublication', getPublication)
+        return await apiClient.get('post/getPublication')
     }catch(e){
         return{
             error:true,

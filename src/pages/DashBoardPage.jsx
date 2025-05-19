@@ -5,16 +5,14 @@ import { DashboardContent } from '../components/DashboardContent'
 export const DashboardPages = () => {
   const {getPublications, allPublications} = usePublication()
 
-    useEffect(() => {
-        getPublications()
-    }, []) 
-
-    console.log("Publicaciones:", allPublications)
+  useEffect(() => {
+    getPublications()
+  }, [])
 
   return (
     <DashboardContent 
-        publications={allPublications} 
-        getPublications={getPublications}
+      publications={allPublications} 
+      getPublications={getPublications}
     />
   )
 }
